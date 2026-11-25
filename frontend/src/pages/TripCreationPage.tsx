@@ -103,14 +103,14 @@ export const TripCreationPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="max-w-4xl mx-auto px-4 py-12 flex-1 w-full">
-        <div className="text-center mb-10">
+      <div className="max-w-4xl mx-auto px-4 py-6 sm:py-12 flex-1 w-full">
+        <div className="text-center mb-6 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-100 border border-cyan-200 text-cyan-800 text-xs font-bold uppercase tracking-wider mb-3 shadow-2xs">
             <Sparkles className="w-3.5 h-3.5 text-cyan-600" />
             AI Travel Parameters
           </div>
-          <h1 className="text-3xl font-extrabold text-slate-900">Configure Your AI Trip</h1>
-          <p className="text-sm font-medium text-slate-600 mt-1">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Configure Your AI Trip</h1>
+          <p className="text-xs sm:text-sm font-medium text-slate-600 mt-1">
             Provide your destination, budget in Rupees (₹), and preferences to prime the LangGraph agent.
           </p>
         </div>
@@ -122,7 +122,7 @@ export const TripCreationPage: React.FC = () => {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-8">
+        <form onSubmit={handleSubmit} className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6 sm:space-y-8">
           
           {/* Destination & Dates */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

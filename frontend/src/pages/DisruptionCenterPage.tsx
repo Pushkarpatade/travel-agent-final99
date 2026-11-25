@@ -53,10 +53,10 @@ export const DisruptionCenterPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col md:flex-row">
         {trip && <Sidebar tripId={trip.id} destination={trip.destination} />}
 
-        <main className="flex-1 p-6 md:p-8 space-y-6 max-w-5xl">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 space-y-6 max-w-5xl">
           <div className="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-slate-200">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider mb-2">

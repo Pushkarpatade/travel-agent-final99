@@ -62,10 +62,10 @@ export const ItineraryPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col md:flex-row">
         {trip && <Sidebar tripId={trip.id} destination={trip.destination} />}
 
-        <main className="flex-1 p-6 md:p-8 space-y-6 max-w-5xl">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 space-y-6 max-w-5xl">
           
           {/* Header Title */}
           <div className="flex items-center justify-between flex-wrap gap-4 pb-4 border-b border-slate-200">

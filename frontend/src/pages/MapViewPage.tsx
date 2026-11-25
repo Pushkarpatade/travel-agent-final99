@@ -40,18 +40,18 @@ export const MapViewPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col md:flex-row">
         {trip && <Sidebar tripId={trip.id} destination={trip.destination} />}
 
-        <main className="flex-1 p-6 md:p-8 space-y-6 max-w-7xl">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 space-y-6 max-w-7xl">
           <div>
-            <h1 className="text-2xl font-bold text-slate-900">Spatial Map & Route Explorer</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-slate-900">Spatial Map & Route Explorer</h1>
             <p className="text-xs font-semibold text-slate-500 mt-1">
               Geocoded activity pins, transit vectors, and distance matrices for {trip?.destination}.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[650px]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 min-h-[500px] lg:h-[650px]">
             
             {/* Interactive Location Marker List Sidebar */}
             <div className="lg:col-span-1 p-4 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col h-full overflow-hidden">

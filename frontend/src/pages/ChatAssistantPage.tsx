@@ -19,16 +19,16 @@ export const ChatAssistantPage: React.FC = () => {
   }, [tripId]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col md:flex-row">
         {trip && <Sidebar tripId={trip.id} destination={trip.destination} />}
 
-        <main className="flex-1 p-6 md:p-8 max-w-5xl">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 max-w-5xl">
           <div className="mb-6">
-            <h1 className="text-2xl font-bold text-white">AI Travel Assistant Chat</h1>
-            <p className="text-xs text-slate-400 mt-1">
+            <h1 className="text-xl sm:text-2xl font-bold text-slate-900">AI Travel Assistant Chat</h1>
+            <p className="text-xs text-slate-500 mt-1">
               Natural language command interface for schedule updates, morning plan queries, and budget modifications.
             </p>
           </div>

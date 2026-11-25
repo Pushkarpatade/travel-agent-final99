@@ -32,10 +32,14 @@ export const Navbar: React.FC = () => {
             </div>
           </Link>
 
-          {/* Real-Time Live Radar Badge (Visible across all screens) */}
-          <div className="hidden md:flex items-center gap-2 py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-bold text-slate-700">
+          {/* Real-Time Live Radar Badge (Responsive across all screens) */}
+          <div className="hidden md:flex items-center gap-2 py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-bold text-slate-700 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>LIVE RADAR // REAL-TIME FLIGHT & WEATHER ACTIVE</span>
+          </div>
+          <div className="flex md:hidden items-center gap-1.5 py-0.5 px-2 rounded-full bg-emerald-50 border border-emerald-200 text-[10px] font-bold text-emerald-800 shadow-2xs">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>LIVE RADAR</span>
           </div>
 
           {/* Navigation Controls */}

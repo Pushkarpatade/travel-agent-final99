@@ -48,10 +48,10 @@ export const BudgetPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col">
       <Navbar />
 
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col md:flex-row">
         {trip && <Sidebar tripId={trip.id} destination={trip.destination} />}
 
-        <main className="flex-1 p-6 md:p-8 space-y-6 max-w-7xl">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 space-y-6 max-w-7xl">
           <div>
             <h1 className="text-2xl font-bold text-slate-900">Financial & Budget Optimizer</h1>
             <p className="text-xs font-semibold text-slate-500 mt-1">
